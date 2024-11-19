@@ -1,0 +1,57 @@
+/* Add background image */
+.payment-container {
+  background-image: url('/assets/log2.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+
+}
+
+.payment-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  height: 60%;
+  
+  
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  
+}
+
+.form-group {
+  margin-bottom: 10px;
+ 
+  
+}
+
+.error-msg {
+  color: red;
+  font-size: 14px;
+}
+
+.exp-cvv-container {
+  display: flex;
+  justify-content: space-between;
+
+ 
+}
+
+.exp-container,
+.cvv-container {
+  flex-basis: calc(30% - 5px);
+}
+
+.submit-btn {
+  width: 100%;
+
+}

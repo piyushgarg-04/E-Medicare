@@ -1,0 +1,63 @@
+#image{
+    padding-left: 20%;
+    padding-bottom: 3%;
+}
+#cardlink{
+    position: absolute;
+    right:    5px;
+    bottom:   5px;
+}
+#grid{
+    padding-bottom: 2%;
+}
+.price{
+    color: #ef4281;
+}
+.card-title{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family:"Helvetica";
+}
+#btn1{
+    border-color: #2196F3;
+    color: dodgerblue;
+    background-color: white;
+}
+#btn1:hover {
+    background: #2196F3;
+    color: white;
+  }
+.card-text{
+    color: rgb(19, 18, 18);
+    font-weight: normal;
+    font-size: 12px;
+    font-family:"Helvetica";
+    width: 14rem; 
+    height: 2rem;
+}
+#plist{
+    padding-bottom:20px;
+    padding-top: 20px;
+}
+.type{
+    color: cadetblue;
+}
+#btn1{
+    border-color: #2196F3;
+    color: dodgerblue;
+    background-color: white;
+}
+#btn1:hover {
+    background: #2196F3;
+    color: white;
+  }
+  h2{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 25px;
+    font-family:"Serif";
+    text-align: center;
+}
+label{
+    font-family:"Serif";
+}

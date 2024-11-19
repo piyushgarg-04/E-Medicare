@@ -1,0 +1,24 @@
+<div class="main">
+  <h2>Users Details</h2>
+  <div class="container">
+    <table class="table table-success">
+      <tr>
+        <th>UserName</th>
+        <th>Password</th>
+        <th>Delete User</th>
+      </tr>
+      <tr *ngFor="let l of Login">
+        <td>{{ l.emailid }}</td>
+        <td>{{ l.password }}</td>
+        <td>
+          <input
+            class="btn1 btn btn-warning"
+            type="button"
+            value="Delete"
+            (click)="deleteUser(l.emailid)"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+/* .row{
+    width: 20%;
+}
+.section {
+    display: flex;
+    flex-direction: row;
+    
+  } */
+  .navbar-brand{
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family:"Serif";
+}
+.navbar-brand:hover{
+    color: rgb(49, 61, 200);
+}
+.nav-link{
+   color: #fff;
+}
+.nav-link:hover {
+    color: rgb(49, 61, 200);
+  }
+.userdash{
+  background-image: linear-gradient(rgb(49, 61, 200), white);
+  }

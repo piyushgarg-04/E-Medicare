@@ -1,0 +1,59 @@
+<div  class="w-25 p-3"style="margin:0 auto;">
+  <h2 class="pt-3 pb-2">Add Product</h2>
+  <form [formGroup]="productRef" (ngSubmit)="storeProduct()">
+
+    <div class="form-group">
+      <label>Product Name</label>
+      <input class="form-control" type="text" formControlName="pname" [required]="true" />
+      <span class="text-danger" *ngIf="pname && pname.touched && pname.invalid">
+        Value is required</span>
+    </div>
+
+    <div class="form-group">
+      <label>Price</label>
+      <input class="form-control" type="number" formControlName="price" required />
+      <span class="text-danger" *ngIf="price && price.touched && price.invalid">
+        Value is required</span>
+    </div>
+
+    <div class="form-group">
+      <label>URL</label>
+      <input class="form-control" type="url" formControlName="url" required />
+      <span class="text-danger" *ngIf="url && url.touched && url.invalid">
+        Value is required</span>
+    </div>
+
+    <div class="form-group">
+      <label for="type">Type</label>
+      <select class="form-control" type="text" id="type" name="type" formControlName="type">
+        <option value="Tablet">Tablet</option>
+        <option value="Capsules">Capsules</option>
+        <option value="Drops">Drops</option>
+        <option value="Inhalers">Inhalers</option>
+        <option value="Injections">Injections</option>
+        <option value="Liquid">Liquid</option>
+      </select>
+      <span class="text-danger" *ngIf="type && type.touched && type.invalid">
+        Value is required</span>
+    </div>
+
+    <div class="form-group">
+      <label>Description</label>
+      <input class="form-control" type="text" formControlName="description" required />
+      <span class="text-danger" *ngIf="description && description.touched && description.invalid">
+        Value is required</span>
+    </div>
+
+    <!-- <div class="pt-3 ps-5">
+      <input type="submit" value="store Product" [disabled]="productRef.invalid" />
+      <input class="ms-2"type="reset" value="reset" />
+    </div> -->
+
+    <div class="button pt-3 ps-5">
+      <button type="submit" class="btn btn-success" [disabled]="productRef.invalid" >Add Product</button>
+      <button id ="btn1" type="reset" class="btn btn-info ms-2">Reset</button>
+    </div>
+  </form>
+  <br />
+  <span align="center" style="color: rgb(14, 165, 189)">{{ storeMsg }}</span>
+</div>

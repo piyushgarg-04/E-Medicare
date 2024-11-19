@@ -1,0 +1,57 @@
+.payment-success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8faf5;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.payment-icon {
+  border-radius: 50%;
+  background-color: rgb(152, 194, 152);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.checkmark {
+  font-size: 48px;
+  color: white;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.action-button {
+  background-color: dodgerblue;
+  font-family: serif;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover, .logout-button:hover {
+  background-color: #0366d6;
+}

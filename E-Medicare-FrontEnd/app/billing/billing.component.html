@@ -1,0 +1,76 @@
+<div class="billing-page">
+  <nav class="navbar navbar-expand-lg" style="background-color: #34495e;">
+    <div class="container-fluid">
+      <div class="navbar-brand" style="font-size: 28px;font-weight:bold;"><i class="bi bi-cart"></i> E-Medicare</div>
+    </div>
+  </nav>
+    
+  <div class="billing-container">
+    <div class="billing-form">
+      <h3>Billing Address</h3>
+      <form [formGroup]="billingForm" class="custom-form">
+        <label for="firstname"><i class="fa fa-user"></i> Full Name</label>
+        <input
+          formControlName="firstname"
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Enter your full name"
+        />
+        <span class="error-message" *ngIf="firstname && firstname.touched && firstname.invalid">
+          * Firstname is required
+        </span>
+
+        <label for="address1"><i class="fa fa-address-card-o"></i> Address1</label>
+        <input
+          formControlName="address1"
+          type="text"
+          id="address1"
+          name="address1"
+          placeholder="Enter your address"
+        />
+        <span class="error-message" *ngIf="address1 && address1.touched && address1.invalid">
+          * Address is required
+        </span>
+
+        <label for="address2"><i class="fa fa-address-card-o"></i> Address2</label>
+        <input
+          formControlName="address2"
+          type="text"
+          id="address2"
+          name="address2"
+          placeholder="Enter your address"
+        />
+        <span class="error-message" *ngIf="address2 && address2.touched && address2.invalid">
+          * Address is required
+        </span>
+
+        <label for="city"><i class="fa fa-institution"></i> City</label>
+        <input formControlName="city" type="text" id="city" name="city" placeholder="Enter your city" />
+        <span class="error-message" *ngIf="city && city.touched && city.invalid">* City is required</span>
+
+        <div class="row">
+          <div class="col-50">
+            <label for="state">State</label>
+            <input formControlName="state" type="text" id="state" name="state" placeholder="Enter your state" />
+            <span class="error-message" *ngIf="state && state.touched && state.invalid">* State is required</span>
+          </div>
+          <div class="col-50">
+            <label for="zip">Zip</label>
+            <input formControlName="zip" type="text" id="zip" name="zip" placeholder="Enter your zip code" />
+            <span class="error-message" *ngIf="zip && zip.touched && zip.invalid">* Zip is required</span>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="proceed-button"
+          routerLink="/checkout"
+          [disabled]="billingForm.invalid"
+        >
+          Proceed to Payment
+        </button>
+      </form>
+    
+    </div>
+  </div>
+</div>

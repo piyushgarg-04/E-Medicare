@@ -1,0 +1,66 @@
+<div class="p-3 pt-5">
+  <div *ngIf="flag">
+    <div  class="w-25 p-3"style="margin:0 auto;">
+      <h2 class="pt-3 pb-2">Update Product</h2>
+      <form (ngSubmit)="updateDataFromDb()">
+    
+        <div class="form-group">
+          <label>Product Name</label>
+          <input class="form-control" type="text" name="pname" [(ngModel)]="pname" [required]="true" />
+        </div>
+    
+        <div class="form-group">
+          <label>Price</label>
+          <input class="form-control" type="number" name="price" [(ngModel)]="price" required />
+        </div>
+    
+        <div class="form-group">
+          <label>URL</label>
+          <input class="form-control" type="url" name="url" [(ngModel)]="url" required />
+        </div>
+    
+        <div class="form-group">
+          <label for="type">Type</label>
+          <select class="form-control" type="text" id="type" name="type" [(ngModel)]="type">
+            <option value="Tablet">Tablet</option>
+            <option value="Capsules">Capsules</option>
+            <option value="Drops">Drops</option>
+            <option value="Inhalers">Inhalers</option>
+            <option value="Injections">Injections</option>
+            <option value="Liquid">Liquid</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <label>Description</label>
+          <input class="form-control" type="text" name="description" [(ngModel)]="description" required />
+        </div>
+
+        <div class="button pt-3 ps-5">
+          <button type="submit" class="btn btn-success">Update</button>
+          <button id ="btn1"type="reset" class="btn btn-info ms-2">Reset</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <div class="container">
+      <div class="row">
+        <div *ngFor="let p of products" class="col-3" id="plist">
+          <!-- card -->
+          <div class="card" style="width: 16rem; height:25rem;">
+            <img class="card-img-top" src="{{ p.url }}" width="200px" height="200px" alt="mes-image">
+            <div class="card-body">
+              <h6 class="card-title">{{ p.pname }}</h6>
+              <h6 class="type">{{ p.type }}</h6>
+              <p class="card-text">{{ p.description }}</p>
+              <h6 class="price">Rs. {{ p.price }}</h6>
+              <input class ="btn btn-primary"type="button" value="Update" (click)="updateProduct(p)" />
+              <input class ="btn btn-info ms-2" id ="btn1" type="button" value="Delete" (click)="deleteProduct(p.pid)" />
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+      </div>
+  </div>
+</div>

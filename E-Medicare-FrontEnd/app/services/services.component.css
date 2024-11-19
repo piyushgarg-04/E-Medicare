@@ -1,0 +1,47 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Default text color */
+}
+/* Apply a background image to the body */
+body {
+    background-image: url('https://th.bing.com/th/id/R.83b952ffe4c1f2c22922143a34aa5082?rik=8hduQLKoJCCEFQ&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f4%2f96%2f78CerH.jpg&ehk=y79by70%2bJCpsnpxOgO2n8dbRJiRMUR8QGvxyDGtkpxU%3d&risl=&pid=ImgRaw&r=0'); /* Update the path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    font-family: Arial, sans-serif; /* Use a fallback font */
+}
+.right-align {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust background color with transparency */
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    color: #000000; /* Adjust text color */
+}
+
+.right-align h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

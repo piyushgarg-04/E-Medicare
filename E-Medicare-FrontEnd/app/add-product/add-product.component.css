@@ -1,0 +1,19 @@
+#btn1{
+    border-color: #2196F3;
+    color: dodgerblue;
+    background-color: white;
+}
+#btn1:hover {
+    background: #2196F3;
+    color: white;
+  }
+  h2{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 25px;
+    font-family:"Serif";
+    text-align: center;
+}
+label{
+    font-family:"Serif";
+}

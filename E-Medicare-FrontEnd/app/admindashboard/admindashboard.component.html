@@ -1,0 +1,39 @@
+<header>
+  <nav class="navbar navbar-expand-sm bg-dark">
+    <a class="navbar-brand ml-5" routerLink="adminHome">
+      <img
+        src="/assets/logo1.jpg "
+        width="30"
+        height="30"
+        class="d-inline-block align-top"
+        alt="navlogo"
+      />
+      E-Medicare
+    </a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link fw-bold font-serif" routerLink="findAllProduct">View Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bold font-serif" routerLink="addProduct">Add Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bold font-serif" routerLink="viewuser">Users</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bold font-serif" routerLink="/changePassword">Change Password</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fw-bold font-serif" routerLink="/home">Logout</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="main">
+  <!-- <img
+    src="https://cdn.iconscout.com/icon/premium/png-256-thumb/database-administrator-5753421-4813758.png"
+    style="margin-left: 40%; margin-top: 20px; height: 400px; width: 400px"
+    alt=""
+  /> -->
+  <router-outlet></router-outlet>
+</div>
